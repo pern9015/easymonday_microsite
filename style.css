@@ -1,0 +1,164 @@
+body {
+  margin: 0;
+  background-color: #e0dacf;
+}
+.logo {
+  width: 150%;
+}
+nav {
+  z-index: 1;
+}
+.navbar-nav {
+  align-items: flex-end;
+}
+.navbar-brand {
+  width: 7.5rem;
+  /* height: 7.5rem; */
+}
+.navbar-light .navbar-nav .nav-link {
+  color: white;
+  font-family: montserrat;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.navbar-light .navbar-toggler {
+  color: white;
+  border: none;
+}
+
+/* splashvideo */
+header video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: 0;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-62%) translateY(-60%);
+}
+
+#hero_section {
+  display: grid;
+}
+
+video,
+.Splash_overskrift,
+.splash_underoverskrift {
+  grid-area: 1 / 1;
+}
+.Splash_overskrift {
+  place-self: center center;
+  color: white;
+  font-size: 8vw;
+  z-index: 1;
+  text-align: center;
+}
+.splash_underoverskrift {
+  place-self: center center;
+  color: white;
+  font-size: 4vw;
+  z-index: 1;
+  text-align: center;
+}
+video {
+  width: 100%;
+  object-fit: cover;
+}
+
+/* header .container {
+  position: relative;
+  z-index: 2;
+} */
+/* header .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  opacity: 0.5;
+  z-index: 1;
+} */
+
+/* Media Query for devices withi coarse pointers and no hover functionality */
+
+/* This will use a fallback image instead of a video for devices that commonly do not support the HTML5 video element */
+/* 
+@media (pointer: coarse) and (hover: none) {
+  header {
+    background: url("https://source.unsplash.com/XT5OInaElMw/1600x900") black
+      no-repeat center center scroll;
+  }
+
+  header video {
+    display: none;
+  }
+} */
+
+#section1 h1 {
+  text-transform: uppercase;
+  color: #738458;
+  z-index: 1;
+}
+
+button {
+  font-family: "Quicksand", sans-serif;
+  padding: 0.5rem 50px 0.5em 50px;
+  border-radius: 34px;
+  background: #738458;
+  text-align: center;
+  text-decoration: none;
+  font-size: 20px;
+  letter-spacing: 1px;
+  color: white;
+  text-transform: uppercase;
+  cursor: pointer;
+  border: none;
+}
+
+button:focus,
+button:active,
+button:focus-within {
+  outline: 0;
+  border-radius: 4px;
+}
+
+button:hover {
+  background-color: #bdd09e;
+}
+
+button:active {
+  background-color: #cebea1;
+}
+
+.baggrund {
+  width: 100%;
+  opacity: 50%;
+}
+
+/* #section2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+} */
+
+#section2 h2 {
+  text-align: center;
+}
+#section2 p {
+  font-size: 18px;
+  padding: 10px 30px;
+}
+#section2 button {
+  text-align: center;
+  align-items: center;
+}
+
+#section2 .boks {
+  width: 100%;
+}

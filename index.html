@@ -12,12 +12,95 @@
       integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
       crossorigin="anonymous"
     />
+
     <link rel="stylesheet" href="style.css" />
 
-    <title>Hello, world!</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;700&family=Quicksand:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Easy Monday</title>
   </head>
   <body>
-    <h1>Hello, world!</h1>
+    <div class="container">
+      <header>
+        <nav class="navbar navbar-expand-lg navbar-light">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+              <img class="logo" src="/content/stort-logo-dark.png" alt="" />
+            </a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNavAltMarkup"
+              aria-controls="navbarNavAltMarkup"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div
+              class="justify-content-end collapse navbar-collapse show"
+              id="navbarNavAltMarkup"
+            >
+              <div class="navbar-nav">
+                <a class="nav-link" href="#">Bestil Madkasse</a>
+              </div>
+            </div>
+          </div>
+        </nav>
+
+        <section id="hero_section">
+          <video
+            playsinline="playsinline"
+            autoplay="autoplay"
+            muted="muted"
+            loop="loop"
+          >
+            <source src="content/splash_med_space.mp4" type="video/mp4" />
+          </video>
+          <h1 class="Splash_overskrift col-12 mb-5">Madpakken</h1>
+          <h2 class="splash_underoverskrift col-12 mt-5">
+            Der giver dig en Easy Monday
+          </h2>
+        </section>
+      </header>
+    </div>
+
+    <main>
+      <section id="section1">
+        <h1 class="col-12">Køb et madpakke-kit idag & få en Easy Monday</h1>
+      </section>
+
+      <div class="baggrund">
+        <img
+          class="baggrund"
+          src="content/baggrund_bue.png"
+          alt="baggrundsgrafik"
+        />
+      </div>
+      <section id="section2" class="col-12">
+        <div class="mb-5 col-md-12 col-lg-6">
+          <h2>Noget til enhver smag</h2>
+          <p>
+            Hos Easy Monday har vi noget til enhver smag, og det er nemmere end
+            nogen-sinde før at lave lækre madpakker som dine børn vil elske dig
+            for
+          </p>
+          <button>Bestil din kasse nu</button>
+        </div>
+
+        <div class="mb-5 col-md-12 col-lg-6">
+          <img class="img-fluid boks" src="content/boks-med-logo2.png" alt="" />
+        </div>
+      </section>
+    </main>
+
+    <!-- The HTML5 video element that will create the background video on the header -->
 
     <!-- Optional JavaScript; choose one of the two! -->
 
