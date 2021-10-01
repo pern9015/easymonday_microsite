@@ -2,6 +2,9 @@ body {
   margin: 0;
   background-color: #e0dacf;
 }
+.container {
+  max-width: 100%;
+}
 .logo {
   width: 150%;
 }
@@ -68,6 +71,7 @@ video,
   text-align: center;
   text-transform: uppercase;
   font-family: quicksand;
+  font-weight: 700;
   margin-top: -8vw;
 }
 .splash_underoverskrift {
@@ -77,6 +81,7 @@ video,
   z-index: 1;
   text-align: center;
   text-transform: uppercase;
+  font-weight: 700;
   font-family: quicksand;
 }
 video {
@@ -115,8 +120,11 @@ video {
 
 #section1 h1 {
   text-transform: uppercase;
+  font-family: quicksand;
   color: #738458;
   z-index: 1;
+  font-weight: 700;
+  text-align: center;
 }
 
 button {
@@ -151,13 +159,23 @@ button:active {
 
 .baggrund {
   width: 100%;
-  opacity: 50%;
+  /* opacity: 50%; */
 }
 
 /* #section2 {
   display: grid;
   grid-template-columns: 1fr 1fr;
 } */
+
+#section0 div {
+  place-self: center;
+  align-items: end;
+}
+
+#section0 div * {
+  grid-area: 1 / 1 / -1 / -1;
+  z-index: 1;
+}
 
 #section2 h2 {
   text-align: center;
@@ -169,8 +187,34 @@ button:active {
 #section2 button {
   text-align: center;
   align-items: center;
+  margin: 0 auto;
+  display: block;
 }
 
 #section2 .boks {
   width: 100%;
+}
+
+#section3 .text {
+  background-color: #cebea1;
+  color: #738458;
+  text-align: center;
+  /* font-size: 4rem; */
+  font-size: clamp(55px, 5.5vw, 75px);
+  font-family: quicksand;
+  font-weight: 700;
+  text-transform: uppercase;
+  /* position: -webkit-sticky;
+   position: sticky;
+  align-self: baseline;
+  transform: translate(0px, 0px); */
+}
+
+#section3 span {
+  color: white;
+}
+
+.sektion3 {
+  background-color: #cebea1;
+  padding-top: 5vw;
 }
