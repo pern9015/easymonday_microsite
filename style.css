@@ -18,6 +18,7 @@ nav {
 .navbar-light .navbar-nav .nav-link {
   color: white;
   font-family: montserrat;
+  margin-top: -40px;
   font-weight: 500;
   text-transform: uppercase;
 }
@@ -48,13 +49,16 @@ header video {
 } */
 
 video,
-.Splash_overskrift,
-.splash_underoverskrift,
+#titel,
 #hero header {
   grid-area: 1 / 1 / -1 / -1;
 }
 
 /*  */
+#titel {
+  z-index: 1;
+  place-self: center;
+}
 
 .Splash_overskrift {
   place-self: center center;
@@ -62,13 +66,18 @@ video,
   font-size: 8vw;
   z-index: 1;
   text-align: center;
+  text-transform: uppercase;
+  font-family: quicksand;
+  margin-top: -8vw;
 }
 .splash_underoverskrift {
   place-self: center center;
   color: white;
-  font-size: 4vw;
+  font-size: 3vw;
   z-index: 1;
   text-align: center;
+  text-transform: uppercase;
+  font-family: quicksand;
 }
 video {
   width: 100%;
