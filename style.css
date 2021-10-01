@@ -29,7 +29,7 @@ nav {
 
 /* splashvideo */
 header video {
-  position: absolute;
+  /* position: absolute;
   top: 50%;
   left: 50%;
   min-width: 100%;
@@ -40,18 +40,22 @@ header video {
   -ms-transform: translateX(-50%) translateY(-50%);
   -moz-transform: translateX(-50%) translateY(-50%);
   -webkit-transform: translateX(-50%) translateY(-50%);
-  transform: translateX(-62%) translateY(-60%);
+  transform: translateX(-62%) translateY(-60%); */
 }
 
-#hero_section {
+/* #hero_section {
   display: grid;
-}
+} */
 
 video,
 .Splash_overskrift,
-.splash_underoverskrift {
-  grid-area: 1 / 1;
+.splash_underoverskrift,
+#hero header {
+  grid-area: 1 / 1 / -1 / -1;
 }
+
+/*  */
+
 .Splash_overskrift {
   place-self: center center;
   color: white;
@@ -95,7 +99,6 @@ video {
     background: url("https://source.unsplash.com/XT5OInaElMw/1600x900") black
       no-repeat center center scroll;
   }
-
   header video {
     display: none;
   }

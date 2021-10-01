@@ -25,11 +25,11 @@
     <title>Easy Monday</title>
   </head>
   <body>
-    <div class="container">
-      <header>
+    <section id="hero" class="d-grid">
+      <header class="container">
         <nav class="navbar navbar-expand-lg navbar-light">
           <div class="container-fluid">
-            <a class="navbar-brand" href="#">
+            <a class="navbar-brand" href="google.com">
               <img class="logo" src="/content/stort-logo-dark.png" alt="" />
             </a>
             <button
@@ -53,28 +53,25 @@
             </div>
           </div>
         </nav>
-
-        <section id="hero_section">
-          <video
-            playsinline="playsinline"
-            autoplay="autoplay"
-            muted="muted"
-            loop="loop"
-          >
-            <source src="content/splash_med_space.mp4" type="video/mp4" />
-          </video>
-          <h1 class="Splash_overskrift col-12 mb-5">Madpakken</h1>
-          <h2 class="splash_underoverskrift col-12 mt-5">
-            Der giver dig en Easy Monday
-          </h2>
-        </section>
       </header>
-    </div>
+      <!-- .container -->
+      <video
+        playsinline="playsinline"
+        autoplay="autoplay"
+        muted="muted"
+        loop="loop"
+      >
+        <source src="content/splash_lille_fil.mp4" type="video/mp4" />
+      </video>
+      <h1 class="Splash_overskrift col-12 mb-5">Madpakken</h1>
+      <h2 class="splash_underoverskrift col-12 mt-5">
+        Der giver dig en Easy Monday
+      </h2>
+    </section>
 
     <main>
       <section id="section1">
         <h1 class="col-12">Køb et madpakke-kit idag & få en Easy Monday</h1>
-        <h2></h2>
       </section>
 
       <div class="baggrund">
@@ -118,8 +115,6 @@
       crossorigin="anonymous"
     ></script>
 
-    <script>
-      scr = "script.js";
-    </script>
+    <script src="script.js"></script>
   </body>
 </html>
